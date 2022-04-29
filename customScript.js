@@ -10,39 +10,41 @@ function storeDetails(){
     var upperCaseLetters = /[A-Z]/g;
     var numbers = /[0-9]/g;
 
-    if(emailor.value.length == 0){
+    if(emailor.value.length == 0 && userName.value == ""){
         alert('Please fill in email');
-
-    }else if(userName.value.length == 0){
-        alert('Please fill in username')
+    }
     
-    }else if(pwd.value.length == 0){
-        alert('Please fill in password');
 
-    }else if(pwdCon.value.length == 0){
-        alert('Please confirm paasword');
-    }
-    else if(name.value.length == 0 && pw.value.length == 0){
-        alert('Please fill in email and password');
+//     }else if(userName.value.length == 0 && userName.value == ""){
+//         alert('Please fill in username')
+    
+//     }else if(pwd.value.length == 0){
+//         alert('Please fill in password');
 
-    }else if(pw.value.length > 8){
-        alert('Max of 8');
+//     }else if(pwdCon.value.length == 0){
+//         alert('Please confirm paasword');
+//     }
+//     else if(name.value.length == 0 && pw.value.length == 0){
+//         alert('Please fill in email and password');
 
-    }else if(!pw.value.match(numbers)){
-        alert('please add 1 number');
+//     }else if(pw.value.length > 8){
+//         alert('Max of 8');
 
-    }else if(!pw.value.match(upperCaseLetters)){
-        alert('please add 1 uppercase letter');
+//     }else if(!pw.value.match(numbers)){
+//         alert('please add 1 number');
 
-    }else if(!pw.value.match(lowerCaseLetters)){
-        alert('please add 1 lovercase letter');
+//     }else if(!pw.value.match(upperCaseLetters)){
+//         alert('please add 1 uppercase letter');
 
-    }else{
-        localStorage.setItem('name', name.value);
-        localStorage.setItem('pw', pw.value);
-        alert('Your account has been created');
-    }
-}
+//     }else if(!pw.value.match(lowerCaseLetters)){
+//         alert('please add 1 lovercase letter');
+
+//     }else{
+//         localStorage.setItem('name', name.value);
+//         localStorage.setItem('pw', pw.value);
+//         alert('Your account has been created');
+//     }
+// }
 
 //checking
 function check(){
