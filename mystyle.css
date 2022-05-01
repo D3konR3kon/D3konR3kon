@@ -88,7 +88,6 @@
 .task {
   font-size: 18px;
   padding: 0 10px;
-  width: -moz-fit-content;
   width: fit-content;
   background: transparent;
   border: none;

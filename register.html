@@ -34,30 +34,26 @@
 </head>
 <body>
     <div class="form-signin mt-5">
-        <form class = "row justify-content-center p-3 theForm">
+        <form class = "row justify-content-center p-3 theForm" >
             <h3 class=" mb-2 fw-normal text-center">Create Account</h1>
             <div class="form-floating mb-2">
                 <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
                 <label for="emailInput">Email address</label>  
             </div>
             
-            <div class="form-floating mb-2 ">
-                <input type="username" class="form-control" id="floatingUser" placeholder="name@example.com">
-                <label for="floatingUser">Username</label>  
-            </div>
-
             <div class="form-floating mb-2">
                 <input type="password" class="form-control" id="floatingPwd" placeholder ="password">
                 <label class="ml-1" for="floatingPwd">Password</label>  
             </div>
            
             <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="pwdConfirm" placeholder ="password">
+                <input type="password" class="form-control" id="pwdConfirm" placeholder ="Confirm password">
                 <label class="ml-1" for="pwdConfirm">Confirm Password</label>  
             </div>
 
             <div class="row">
-                <button class="col-xs-9 sm-6 md-2 btn btn-md my-2" type="submit">Continue</button>
+
+                <button class="col-xs-9 sm-6 md-2 btn btn-md my-2"  onclick="signUp(event);" >Continue</button>
                 
             </div>
         </form>
@@ -67,6 +63,6 @@
 
     <!--Initializing bootstrap script file-->
     <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <script src="/customScript.js"></script>
+    <script src="/Login_Reg.js"></script>
 </body>
 </html>
