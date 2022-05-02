@@ -35,15 +35,16 @@ const signUp = e => {
 }
 // the sign in function 
 function signIn(e) {
-    let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
+    let email = document.getElementById('emailInput').value;
+    let pwd = document.getElementById('floatingPwd').value;
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
     let exist = formData.length && 
-    JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
+    JSON.parse(localStorage.getItem('formData')).some(data => data.email == email && data.pwd == pwd);
     if(!exist){
         alert("Incorrect login credentials");
     }
     else{
-        location.href = "/";
+        location.href = "https://www.youtube.com/";
     }
     e.preventDefault();
 }
